@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <style>
+      canvas {
+          margin: auto;
+          display: block;
+          border: 1px solid #CCC;
+      }
+      body {
+          display: flex;
+          height: 100vh;
+          margin: 0;
+          justify-content: center;
+          align-items: center;
+      }
+      #app {
+          display: table;
+          margin: auto;
+      }
+      #app > div {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+      <div>
+        <div>
+          <input id="pre" type="radio" name="post_or_pre" value="pre" checked/>
+          <label for="pre">preFX</label>
+          <input id="post" type="radio" name="post_or_pre" value="post" />
+          <label for="post">postFX</label>
+        </div>
+        <div>
+          <label for="effectList">Select Effect:</label>
+          <select id="effectList">
+            <option value="">none</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <p>
+          <a href="https://newdocs.phaser.io/docs/3.60.0/Phaser.GameObjects.Components.FX">phaser3 doc</a>
+        </p>
+        <p>
+          <a href="https://phaser.io/examples/v3/category/fx">fx examples</a>
+        </p>
+        <p>
+          <a href="https://github.com/babu-ch/phaser_fx">src</a>
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
